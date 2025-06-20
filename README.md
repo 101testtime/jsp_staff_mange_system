@@ -1,2 +1,3 @@
 # jsp_staff_mange_system
 期末小组作业基于jsp和dao模式
+需要准备数据库
