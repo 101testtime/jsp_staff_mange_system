@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>findbyid.htm</title>
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <style>
+        /* 重置浏览器默认样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* 容器样式 */
+        .container {
+            margin: 50px auto;
+            padding: 20px;
+            width: 300px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            text-align: center; /* 直接在容器上设置居中 */
+        }
+
+        /* 表单元素样式 */
+        .container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .container input[type="text"] {
+            width: calc(100% - 22px); /* 减去左右padding的宽度 */
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+        }
+
+        .container input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="findbyname" method="post">
+            <label for="bh">请输入员工姓名：</label>
+            <input type="text" id="bh" name="bh" />
+            <input type="submit" value="查找" />
+        </form>
+    </div>
+</body>
+</html>

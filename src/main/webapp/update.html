@@ -1,0 +1,96 @@
+setEmployeeSalary<!DOCTYPE html>  
+<html>  
+<head>  
+<title>修改员工信息</title>  
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">  
+<meta http-equiv="description" content="this is my page">  
+<meta http-equiv="content-type" content="text/html; charset=utf-8">  
+<style>  
+    body {  
+        font-family: Arial, sans-serif;  
+        background-color: #3498db; /* 蓝色背景 */  
+        margin: 0;  
+        padding: 0;  
+        display: flex;  
+        flex-direction: column;  
+        align-items: center;  
+        justify-content: center;  
+        min-height: 100vh;  
+    }  
+
+    .container {  
+        width: 100%;  
+        max-width: 500px;  
+        background-color: #fff;  
+        padding: 30px;  
+        border-radius: 10px;  
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);  
+        margin-top: 100px; /* 向下移动表单容器 */  
+    }  
+
+    h1 {  
+        text-align: center;  
+        margin-bottom: 30px;  
+        color: #333;  
+    }  
+
+    form {  
+        color: #333;  
+        font-size: 16px;  
+    }  
+
+    input[type="text"] {  
+        width: 100%;  
+        padding: 10px;  
+        border: 1px solid #ccc;  
+        border-radius: 5px;  
+        margin-bottom: 15px;  
+        box-sizing: border-box;  
+    }  
+
+    input[type="submit"] {  
+        width: 100%;  
+        padding: 10px 20px;  
+        background-color: #3498db;  
+        color: white;  
+        border: none;  
+        border-radius: 5px;  
+        cursor: pointer;  
+        font-size: 16px;  
+    }  
+
+    input[type="submit"]:hover {  
+        background-color: #2980b9;  
+    }  
+
+    a {  
+        display: block;  
+        margin-top: 20px;  
+        text-align: center;  
+        text-decoration: none;  
+        color: #3498db;  
+        font-size: 16px;  
+    }  
+
+    a:hover {  
+        text-decoration: underline;  
+        color: #2980b9;  
+    }  
+</style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>修改员工信息</h1>  
+        <form action="updata" method="post">  
+            员工编号：<input type="text" name="empno" required><br/>  
+            员工姓名：<input type="text" name="ename" required><br/>  
+            员工性别：<input type="text" name="sex" required><br/> 
+            员工职务：<input type="text" name="job" required><br/>  
+            聘用日期：<input type="text" name="hiredate" required><br/>  
+            基本工资：<input type="text" name="sal" required><br/>  
+            <input type="submit" value="修改">  
+        </form>  
+        <a href="welcome.jsp">返回管理界面</a>  
+    </div>  
+</body>  
+</html>
