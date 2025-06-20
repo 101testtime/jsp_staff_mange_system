@@ -1,0 +1,112 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="UTF-8">  
+    <title>魔乐公司员工信息添加系统</title>  
+    <style>  
+        body {  
+            background-color: #3498db;  
+            font-family: Arial, sans-serif;  
+            margin: 0;  
+            padding: 0;  
+            display: flex;  
+            justify-content: center;  
+            align-items: center;  
+            height: 100vh;  
+        }  
+
+        .container {  
+            max-width: 500px;  
+            background-color: white;  
+            padding: 30px;  
+            border-radius: 10px;  
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+        }  
+
+        h1 {  
+            text-align: center;  
+            color: #333;  
+            margin-bottom: 30px;  
+        }  
+
+        .form-group {  
+            margin-bottom: 20px;  
+        }  
+
+        label {  
+            display: block;  
+            font-weight: bold;  
+            margin-bottom: 5px;  
+        }  
+
+        input[type="text"] {  
+            width: 100%;  
+            padding: 10px;  
+            border: 1px solid #ccc;  
+            border-radius: 5px;  
+            font-size: 16px;  
+        }  
+
+        input[type="submit"] {  
+            display: block;  
+            width: 100%;  
+            padding: 10px;  
+            background-color: #3498db;  
+            color: white;  
+            border: none;  
+            border-radius: 5px;  
+            font-size: 16px;  
+            cursor: pointer;  
+        }  
+
+        input[type="submit"]:hover {  
+            background-color: #2980b9;  
+        }  
+
+        a {  
+            display: block;  
+            text-align: center;  
+            margin-top: 20px;  
+            color: #333;  
+            text-decoration: none;  
+        }  
+
+        a:hover {  
+            color: #3498db;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <div class="container">  
+        <h1>魔乐公司员工信息添加系统</h1>  
+        <form action="insert" method="post">  
+            <div class="form-group">  
+                <label for="empno">员工编号:</label>  
+                <input type="text" id="empno" name="empno" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="ename">员工姓名:</label>  
+                <input type="text" id="ename" name="ename" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="sex">员工性别:</label>  
+                <input type="text" id="sex" name="sex" required>  
+            </div>
+            <div class="form-group">  
+                <label for="job">员工职务:</label>  
+                <input type="text" id="job" name="job" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="hiredate">聘用日期:</label>  
+                <input type="text" id="hiredate" name="hiredate" required>  
+            </div>  
+            <div class="form-group">  
+                <label for="sal">基本工资:</label>  
+                <input type="text" id="sal" name="sal" required>  
+            </div>  
+            <input type="submit" value="添加">  
+        </form>  
+        <a href="welcome.jsp">返回管理界面</a>  
+    </div>  
+</body>  
+</html>
